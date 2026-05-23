@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+input,
+select,
+textarea {
+  background: transparent;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md font-medium transition;
+}
+.btn-primary {
+  @apply btn bg-accent text-slate-900 hover:bg-accent-soft;
+}
+.btn-secondary {
+  @apply btn bg-slate-700 text-slate-100 hover:bg-slate-600;
+}
+.btn-ghost {
+  @apply btn text-slate-300 hover:bg-slate-800;
+}
+.input {
+  @apply w-full px-3 py-2 rounded-md bg-canvas-inset border border-slate-700 focus:border-accent outline-none;
+}
+.label {
+  @apply block text-xs uppercase tracking-wider text-slate-400 mb-1;
+}
+.card {
+  @apply rounded-lg bg-canvas-panel border border-slate-700 p-4;
+}
