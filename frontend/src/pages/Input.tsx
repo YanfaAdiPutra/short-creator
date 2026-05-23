@@ -5,7 +5,6 @@ import { useStore } from "../store";
 
 export default function InputPage() {
   const project = useStore((s) => s.project);
-  const trackJob = useStore((s) => s.trackJob);
   const setStep = useStore((s) => s.setStep);
   const loadProject = useStore((s) => s.loadProject);
   const navigate = useNavigate();
